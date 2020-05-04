@@ -1,0 +1,9 @@
+.checkout-form {
+
+        color:black;
+        background-color:yellow;
+        background:-webkit-gradient(linear, 18% 0%, 15% 34%, from(#DCF800), to(#FFACDB));
+        border-style: ridge;
+        margin-top: 6em;
+
+      }
