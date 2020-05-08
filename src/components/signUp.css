@@ -1,0 +1,18 @@
+.form {margin-top: 20 px;
+}
+
+.sign-up-form{
+  transform: translate(0px, 58px);
+  -webkit-transform: translate(0px, 58px);
+  -moz-transform: translate(0px, 58px);
+  -o-transform: translate(0px, 58px);
+  -ms-transform: translate(0px, 58px);
+}
+
+.log-in-form{
+  transform: translate(0px, 58px);
+  -webkit-transform: translate(0px, 58px);
+  -moz-transform: translate(0px, 58px);
+  -o-transform: translate(0px, 58px);
+  -ms-transform: translate(0px, 58px);
+}

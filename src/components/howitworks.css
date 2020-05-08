@@ -1,0 +1,7 @@
+.alert{
+  transform: translate(0px, 114px);
+-webkit-transform: translate(0px, 114px);
+-moz-transform: translate(0px, 114px);
+-o-transform: translate(0px, 114px);
+-ms-transform: translate(0px, 114px);
+}
