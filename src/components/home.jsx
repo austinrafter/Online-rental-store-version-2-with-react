@@ -4,7 +4,7 @@ import {Jumbotron, Container, Row, Col, Image, Form, Button} from 'react-bootstr
 import { Redirect } from "react-router-dom";
 import './home.css';
 
-
+/*Austin Rafter*/
 export default class Home extends Component {
   constructor(props) {
   super(props);
@@ -31,7 +31,8 @@ this.setState({
 
 handleSubmit(event) {
   event.preventDefault();
-
+  
+  /*Austin Rafter*/
   let token = window.sessionStorage.getItem('jwttoken')
   let removetoken= window.sessionStorage.removeItem('jwttoken')
   if(token){
@@ -39,6 +40,7 @@ handleSubmit(event) {
     this.props.history.push('/');
  }
 }
+  /*Austin Rafter*/
   render() {
     return (
 
