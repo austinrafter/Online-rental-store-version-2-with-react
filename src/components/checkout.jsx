@@ -5,11 +5,12 @@ import { useLocation } from 'react-router-dom'
 import './home.css';
 import './checkout.css';
 
-
+/*Austin Rafter*/
 export default class Checkout extends Component {
+  /*Austin Rafter*/
   constructor(props) {
   super(props);
-
+/*Austin Rafter*/
   this.state = {
     pickup_datetime: '',
     dropoff_datetime:'',
@@ -22,13 +23,13 @@ export default class Checkout extends Component {
 
 
   }
-
+/*Austin Rafter*/
   this.onChange = this.onChange.bind(this);
   this.handleSubmit = this.handleSubmit.bind(this);
 }
 
 
-
+/*Austin Rafter*/
 onChange(e){
   console.log("handle change", e);
 
@@ -38,11 +39,12 @@ this.setState({
 
 }
 
+/*Austin Rafter*/
 handleSubmit(event) {
   event.preventDefault();
 let token = window.sessionStorage.getItem('jwttoken')
 let location=useLocation()
-
+/*Austin Rafter*/
 let data  = JSON.stringify({
     carId: this.window.location.pathname.split('/'),    //grab from param in url
     from : this.state.pickup_datetime,
@@ -55,6 +57,7 @@ let data  = JSON.stringify({
       exp_date: this.state.exp_date,
       cvv: this.state.cvv},
   })
+/*Austin Rafter*/
   console.log(this.window.location.pathname.split('/'));
   axios.post('http://localhost:3000/orders/', data, {
     headers: {
@@ -66,6 +69,7 @@ let data  = JSON.stringify({
     this.props.history.push(`/`)
   })
 }
+  /*Austin Rafter*/
   render(){
     return(
     <Container>
