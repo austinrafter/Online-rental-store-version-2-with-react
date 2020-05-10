@@ -4,7 +4,9 @@ import axios from 'axios'
 import './home.css';
 import './signUp.css';
 
+/*Austin Rafter*/
 export default class SignUp extends Component {
+  /*Austin Rafter*/
   constructor(props) {
   super(props);
   this.state = {
@@ -19,6 +21,7 @@ export default class SignUp extends Component {
 
   }
 
+    /*Austin Rafter*/
   this.onChange = this.onChange.bind(this);
   this.handleSubmit = this.handleSubmit.bind(this);
   }
@@ -27,7 +30,7 @@ export default class SignUp extends Component {
 
 
 
-
+  /*Austin Rafter*/
   onChange(e){
 
   this.setState({
@@ -36,7 +39,7 @@ export default class SignUp extends Component {
 
   }
 
-
+/*Austin Rafter*/
 handleSubmit(event) {
   event.preventDefault()
 
@@ -48,7 +51,8 @@ handleSubmit(event) {
         license_number: this.state.license_number,
         age: parseInt(this.state.age)
       })
-
+      
+    /*Austin Rafter*/
       axios.post('http://localhost:3000/user/signup', newUser, {
         headers: {
           'Content-Type':'application/json'
@@ -59,7 +63,7 @@ handleSubmit(event) {
       })
 }
 
-
+  /*Austin Rafter*/
   render(){
 
     return(
