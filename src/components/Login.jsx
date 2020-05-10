@@ -7,7 +7,9 @@ import ErrorBoundary from './ErrorBoundary'
 import './home.css';
 import './signUp.css';
 
+/*Austin Rafter*/
 export default class Login extends Component {
+  /*Austin Rafter*/
   constructor(props) {
   super(props);
   this.state = {
@@ -16,7 +18,8 @@ export default class Login extends Component {
     errors: {}
 
   }
-
+    
+  /*Austin Rafter*/
   this.onChange = this.onChange.bind(this);
   this.onSubmit = this.onSubmit.bind(this);
   }
@@ -52,7 +55,8 @@ export default class Login extends Component {
     }
     return headers
   }
-
+  
+ /*Austin Rafter*/
   onSubmit(e) {
     e.preventDefault()
 
@@ -84,9 +88,9 @@ export default class Login extends Component {
 
 
 
-
+/*Austin Rafter*/
   render(){
-
+  /*Austin Rafter*/
     return(
       <ErrorBoundary>
       <Container>
