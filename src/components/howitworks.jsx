@@ -4,7 +4,7 @@ import { Container, Row, Col, Image, Alert} from 'react-bootstrap';
 import './home.css';
 import './howitworks.css';
 
-/*Author:Austin Rafter*/
+/*Author:Austin Rafter, Tim Kim*/
 export default class About extends Component {
   render(){
     return(
@@ -14,7 +14,7 @@ export default class About extends Component {
       <Row>
       <Col>
       <Alert variant="success">
-      /*Author:Tim Kim */
+    
   <Alert.Heading>Rentals to your taste!</Alert.Heading>
   <p>
     <b>YOU</b> get to choose 
@@ -38,7 +38,7 @@ export default class About extends Component {
 </Alert>
       </Col>
       </Row>
-        /*Author:Austin Rafter*/
+      
       <Row>
         <Image src="assets/cars3.jpg"  class="img-rounded" className="large-pic" alt= "cars"/>
       </Row>
